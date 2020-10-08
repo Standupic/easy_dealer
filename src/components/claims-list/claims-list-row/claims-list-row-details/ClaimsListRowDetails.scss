@@ -1,0 +1,35 @@
+.row-details {
+  padding: 15px;
+  display: flex;
+
+  .text-details,
+  .action-details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-details {
+    width: 50%;
+    &__row {
+      display: flex;
+      flex-direction: row;
+
+      label {
+        font-weight: bold;
+        margin-right: 5px;
+      }
+      span {
+        color: #656464
+      }
+    }
+  }
+
+  .action-details {
+    width: 20%;
+    &__action {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.main-space {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  &__empty-title {
+    padding: 15px;
+  }
+}
