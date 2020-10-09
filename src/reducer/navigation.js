@@ -1,10 +1,10 @@
-import {NAV_BUTTON_CLICK} from "./types";
+import {NAV_BUTTON_CLICK} from "./constans";
 
 const initialState = {
   activeTab: null
 }
 
-export const navReducer = (state = initialState, action) => {
+export const navigation = (state = initialState, action) => {
   switch (action.type) {
     case NAV_BUTTON_CLICK:
       return {

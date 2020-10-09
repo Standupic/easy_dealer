@@ -1,10 +1,10 @@
 import React from "react";
 import {connect} from 'react-redux';
-import {navItemClick} from "../../redux/actions";
-import './NavPanel.scss';
+import {navItemClick} from "../../action/actions";
+import './navigation.sass';
 import NavPanelItem from "./nav-panel-item/NavPanelItem";
 
-class NavPanel extends React.Component {
+class Navigation extends React.Component {
   onNavItemClick = id => {
     this.props.navItemClick(id);
   }
@@ -21,8 +21,4 @@ class NavPanel extends React.Component {
   }
 }
 
-const mapDispatchToProps = {
-  navItemClick
-}
-
-export default connect(null, mapDispatchToProps)(NavPanel);
+export default connect(null, {navItemClick})(Navigation);

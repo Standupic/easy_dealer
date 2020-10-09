@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import "./Login.scss";
 import {Button} from "@material-ui/core";
-import { login } from "../../redux/actions";
+import { login } from "../../action/actions";
 
 class Login extends React.Component {
   constructor(props) {
@@ -48,15 +48,11 @@ class Login extends React.Component {
               onClick={this.sendLoginData}>
               Продолжить
             </Button>
-            <a href="">Забыли пароль?</a>
+            <a href="!#">Забыли пароль?</a>
           </div>
       </div>
     )
   }
 }
 
-const mapDispatchToProps = {
-  login
-}
-
-export default connect(null, mapDispatchToProps)(Login);
+export default connect(null, {login})(Login);

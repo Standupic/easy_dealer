@@ -1,4 +1,4 @@
-import {LOGIN, NAV_BUTTON_CLICK} from "./types";
+import {LOGIN, NAV_BUTTON_CLICK} from "../constans";
 
 export function login() {
   return {

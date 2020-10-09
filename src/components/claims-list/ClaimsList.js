@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {Table, TableBody, TableContainer, TableHead, TableRow} from "@material-ui/core";
 import TableCell from "@material-ui/core/TableCell";
 import ClaimsListRow from "./claims-list-row/ClaimsListRow";
-import './ClaimsList.scss';
+import './claimsList.sass';
 import TableFooter from "@material-ui/core/TableFooter";
 import TablePagination from "@material-ui/core/TablePagination";
 
